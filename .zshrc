@@ -69,8 +69,13 @@ bindkey "^[[Z" reverse-menu-complete
 bindkey -e
 
 
-
+# auto created
 zstyle :compinstall filename '/home/katsumata/.zshrc'
+
+# 補完に色をつける
+eval `dircolors -b`
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+
 
 ###################################################
 # モジュールの読み込み
@@ -120,8 +125,9 @@ zmodload zsh/mathfunc
 alias bc='bc -l'
 alias nautilus.='nautilus .'
 alias less='less -X'
-alias ll="ls -l"
-alias la="ls -al"
+alias ls="ls --color=auto"
+alias ll="ls -l --color=auto"
+alias la="ls -al --color=auto"
 
 # xsel (about clipboard command)
 if test -f $HOME/install/bin/xsel ; then
