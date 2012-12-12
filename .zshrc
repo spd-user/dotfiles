@@ -1,8 +1,3 @@
-HISTFILE=~/.zsh_history
-HISTSIZE=1000
-SAVEHIST=1500
-
-export EDITOR="emacs -nw"
 
 #####################################################
 # オプションの設定
@@ -67,7 +62,6 @@ bindkey "^[[Z" reverse-menu-complete
 
 # emacs key
 bindkey -e
-
 
 # auto created
 zstyle :compinstall filename '/home/katsumata/.zshrc'
@@ -145,10 +139,4 @@ PROMPT=\${vcs_info_msg_0_}"%n@${MACHINE}:%{${fg[green]}%}%~%{${reset_color}%}> "
 PROMPT2="> "
 SPROMPT="zsh: correct '%R' to '%r' [(N)o, (Y)es, (A)bort, (E)dit]? "
 unset MACHINE
-
-##################################################
-# パスなど
-##################################################
-GOROOT=$HOME/go
-PATH=$PATH:$GOROOT/bin
 

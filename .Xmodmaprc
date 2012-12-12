@@ -1,0 +1,9 @@
+! Caps_Lock --> Control
+! Muhenkan  --> Caps_Lock
+! Henkan    --> Esc
+remove lock = Eisu_toggle
+keysym Muhenkan = Eisu_toggle Caps_Lock
+keysym Eisu_toggle = Control_L
+keysym Henkan_Mode = Escape
+add control = Control_L
+add lock = Eisu_toggle
