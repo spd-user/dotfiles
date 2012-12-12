@@ -128,6 +128,7 @@ alias less='less -X'
 alias ls="ls --color=auto"
 alias ll="ls -l --color=auto"
 alias la="ls -al --color=auto"
+alias l="ls -l --color=auto"
 
 # xsel (about clipboard command)
 if test -f $HOME/install/bin/xsel ; then
