@@ -16,7 +16,7 @@ setopt pushd_to_home
 # グロブの拡張
 setopt extendedglob
 # 補完のあいまいさがあっても完全一致があれば、確定
-setopt rec_exact
+#setopt rec_exact
 # ドットファイルにマッチさせるとき、明示的 "." がいらない
 setopt glob_dots
 # ディレクトリのスラッシュ補完はしない
