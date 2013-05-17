@@ -70,6 +70,9 @@ zstyle :compinstall filename '/home/katsumata/.zshrc'
 eval `dircolors -b`
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
+# 補完候補を矢印キーで選択
+zstyle ':completion:*:default' menu select=1
+
 
 ###################################################
 # モジュールの読み込み
