@@ -127,6 +127,19 @@ alias ll="ls -l --color=auto"
 alias la="ls -al --color=auto"
 alias l="ls -l --color=auto"
 
+# バックアップを削除する
+function rmbk() {
+    rm $@
+}
+function _rmbk() {
+    compadd $(ls *~)
+}
+compdef _rmbk rmbk
+
+
+# 実行で画像が開けるようにする
+alias -s {png,jpg,bmp,PNG,JPG,BMP}=eog
+
 # xsel (about clipboard command)
 if test -f $HOME/install/bin/xsel ; then
     alias -g C=" | xsel -bi" #stdout => clip
