@@ -1,0 +1,9 @@
+XTerm*visualBell: false
+XTerm*cjkWidth: true
+XTerm*faceSize: 12
+XTerm*faceNameDoubleSpace: Monospace
+XTerm*scrollBar: false
+XTerm*background: white
+XTerm*foreground: black
+XTerm*saveLines: 2000
+XTerm*utf8: 1
